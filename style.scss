@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1.5fr;
+    grid-template-rows: 1fr 4fr 3fr 2fr;
+    grid-template-areas: 
+        "main main head"
+        "main main candy"
+        "nom yum candy"
+        "foot Foot candy";
+    height: 100vh;
+    margin: 1em;
+}
+
+main {
+    grid-area: main;
+    background: tomato;
+}
+
+
+section .Nom {
+    grid-area: nom;
+    background: steelblue;
+}
+
+section.Yum {
+    grid-area: yum;
+    background: black;
+}
+
+section.Diabeetus {
+    grid-area: Foot;
+    background: orange;
+}
+
+header {
+    grid-area: head;
+    background: slateblue;
+}
+
+.candy {
+    grid-area: candy;
+    background: pink;
+}

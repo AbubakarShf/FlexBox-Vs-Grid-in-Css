@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.2fr 1.5fr;
+      grid-template-columns: 1fr 1.2fr 1.5fr;
+  -ms-grid-rows: 1fr 4fr 3fr 2fr;
+      grid-template-rows: 1fr 4fr 3fr 2fr;
+      grid-template-areas: "main main head" "main main candy" "nom yum candy" "foot Foot candy";
+  height: 100vh;
+  margin: 1em;
+}
+
+main {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: main;
+  background: tomato;
+}
+
+section .Nom {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: nom;
+  background: steelblue;
+}
+
+section.Yum {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: yum;
+  background: black;
+}
+
+section.Diabeetus {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: Foot;
+  background: orange;
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: head;
+  background: slateblue;
+}
+
+.candy {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: candy;
+  background: pink;
+}
+/*# sourceMappingURL=style.css.map */
